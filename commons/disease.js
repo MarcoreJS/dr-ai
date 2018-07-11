@@ -1,6 +1,12 @@
 class Disease {
-    constructor(name, symptoms = []){
+    constructor(name){
         this.name = name;
-        this.symptoms = symptoms;
+        this.symptoms = [];
+        this.groups = [];
+        this.causes = [];
+    }
+
+    addSymptom(sym) {
+        this.symptoms.push(sym);
     }
 }
