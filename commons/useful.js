@@ -4,4 +4,8 @@ class Useful {
         let new_q = quantity - min;
         return new_q / new_max;
     }
+
+    static randomInt(max, min) {
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
 }
